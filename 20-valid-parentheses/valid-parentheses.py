@@ -2,6 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         dict = { "]": "[", "}": "{", ")": "("}
         stack = []
+        
         for i in s:
             if i == "[" or i == "(" or i == "{":
                 stack.append(i)
@@ -14,6 +15,7 @@ class Solution:
                         stack.pop()
                 else:
                     return False
+
         if len(stack) == 0:
             return True
         else:
