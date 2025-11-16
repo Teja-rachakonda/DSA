@@ -9,7 +9,7 @@ class Solution:
             else:
                 if current_length > 0:
                     substring_for_block = (current_length * (current_length + 1)) // 2
-                    total_count = (total_count + substring_for_block) % MOD
+                    total_count = (total_count + substring_for_block) 
 
                 current_length = 0
         
